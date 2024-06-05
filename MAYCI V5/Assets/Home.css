@@ -1,0 +1,151 @@
+/* Estilos para la barra de navegación */
+.navbar-custom {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* Estilos para el input de búsqueda */
+.search-input {
+    border-radius: 20px;
+    background-color: #f1f3f5;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Estilos para los botones de iconos */
+.icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para las imágenes en los botones de iconos */
+.icon-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Estilos para el hover de los botones de iconos */
+.icon-button:hover {
+    background-color: #e9ecef;
+    border-radius: 50%;
+}
+
+/* Estilos para las imágenes de perfil */
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+/* Estilos para el cuerpo de la página */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Estilos para la barra lateral */
+.sidebar {
+    background-color: #fff;
+    border-right: 1px solid #e9ecef;
+    padding-top: 20px;
+    width: 200px;
+}
+
+/* Estilos para los elementos de la barra lateral */
+.sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Estilos para el hover de los elementos de la barra lateral */
+.sidebar a:hover {
+    background-color: #e9ecef;
+    border-radius: 5px;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+    padding: 20px;
+}
+
+/* Estilos para las secciones de sugerencias, tendencias y publicidad */
+.suggestions,
+.trending,
+.advertising,
+.post {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los elementos de sugerencias y tendencias */
+.suggestion-item,
+.trending-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* Estilos para las imágenes de los elementos de sugerencias y tendencias */
+.suggestion-item img,
+.trending-item img {
+    border-radius: 50%;
+}
+
+/* Estilos para la barra inferior */
+.bottom-bar {
+    background-color: #fff;
+    border-top: 1px solid #e9ecef;
+    padding: 10px 0;
+}
+
+/* Estilos para los enlaces de la barra inferior */
+.bottom-bar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Estilos para el hover de los enlaces de la barra inferior */
+.bottom-bar a:hover {
+    background-color: #e9ecef;
+}
+
+/* Ajustes para dispositivos pequeños */
+@media (max-width: 768px) {
+    /* Ajuste del padding en dispositivos pequeños */
+    .main-content {
+        padding: 20px 10px;
+    }
+    /* Ajuste del ancho del input en pantallas pequeñas */
+    .search-input {
+        width: calc(100% - 60px);
+        max-width: none;
+        margin: 0;
+    }
+}
+
+/* Ajustes para dispositivos medianos y grandes */
+@media (min-width: 768px) {
+    /* Para centrar el contenido en la barra de navegación */
+    .navbar-nav {
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+    /* Ajuste para centrar el input en la barra de navegación */
+    .navbar-custom .container-fluid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

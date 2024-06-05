@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Assets/Home.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-custom navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <!-- Input de búsqueda -->
+            <div class="d-flex justify-content-center flex-grow-1">
+                <div class="position-relative">
+                    <input type="text" class="form-control search-input" placeholder="Search...">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search position-absolute" viewBox="0 0 16 16" style="left: 10px; top: 50%; transform: translateY(-50%);">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.442 1.48a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+                    </svg>
+                </div>
+            </div>
+            <!-- Botón de hamburguesa para dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Opciones de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <!-- Perfil del usuario con menú desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="Profile" class="profile-pic">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Configuración</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Cerrar sesión</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Barra lateral -->
+            <div class="col-md-2 sidebar d-none d-md-block">
+                <a href="#"><img src="home-icon.png" alt="Home" width="24" height="24" class="mr-2">Home</a>
+                <a href="#"><img src="friends-icon.png" alt="Friends" width="24" height="24" class="mr-2">Friends</a>
+                <a href="#"><img src="groups-icon.png" alt="Groups" width="24" height="24" class="mr-2">Groups</a>
+                <a href="#"><img src="events-icon.png" alt="Events" width="24" height="24" class="mr-2">Events</a>
+            </div>
+
+            <!-- Contenido principal -->
+            <div class="col-md-7 main-content col-12">
+                <div class="post">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="User" width="40" height="40" class="mr-3">
+                        <div>
+                            <strong>John Doe</strong><br>
+                            <small>@johndoe</small>
+                        </div>
+                    </div>
+                    <p>Excited to share my latest project with you all! Check it out and let me know what you think.</p>
+                    <div class="img-placeholder" style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                        <img src="image-placeholder.png" alt="Image" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Barra lateral derecha -->
+            <div class="col-md-3 d-none d-md-block">
+                <!-- Sección de sugerencias -->
+                <div class="suggestions mb-4">
+                    <h5>Suggestions</h5>
+                    <div class="suggestion-item">
+                        <div class="d-flex align-items-center">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="Jane Doe" width="40" height="40" class="mr-2">
+                            <div>
+                                <strong>Jane Doe</strong><br>
+                                <small>@janedoe</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm">+</button>
+                    </div>
+                    <div class="suggestion-item">
+                        <div class="d-flex align-items-center">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="John Smith" width="40" height="40" class="mr-2">
+                            <div>
+                                <strong>John Smith</strong><br>
+                                <small>@johnsmith</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm">+</button>
+                    </div>
+                </div>
+
+                <!-- Sección de publicidad -->
+                <div class="advertising mb-4">
+                    <h5>Advertising</h5>
+                    <div class="img-placeholder" style="height: 100px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                        <img src="ad-placeholder.png" alt="Ad" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                    <small>Sponsored</small>
+                </div>
+
+                <!-- Sección de tendencias -->
+                <div class="trending">
+                    <h5>Trending</h5>
+                    <div class="trending-item">
+                        <div>#NewFeature</div>
+                    </div>
+                    <div class="trending-item">
+                        <div>#SocialMedia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
