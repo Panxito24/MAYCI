@@ -1,0 +1,19 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.bg-light {
+    background-color: #f5f9ff !important;
+}
+
+.text-primary {
+    color: #3671fd !important;
+}
+
+img {
+    display: block;
+}
