@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home estudiantes</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!--  css-->
+    <link rel="stylesheet" href="Assets/home.estudiantes.css">
+    <!-- css -->
+
+    <!-- javascript -->
+    <script src="Assets/script/javascriptdeestudiante.js" defer></script>
+    <!-- javascript -->
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-custom navbar-expand-lg bg-body-tertiary" style="background-color: gray;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: white;">MAYCI</a>
+            <!-- Input de búsqueda -->
+            <div class="d-flex justify-content-center flex-grow-1">
+                <div class="position-relative">
+                    <input type="text" class="form-control search-input" placeholder="Search...">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-search position-absolute" viewBox="0 0 16 16"
+                        style="left: 10px; top: 50%; transform: translateY(-50%);">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.442 1.48a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+                    </svg>
+                </div>
+            </div>
+            <!-- Botón de hamburguesa para dispositivos móviles -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Opciones de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">Features</a>
+                    </li>
+                    <!-- Perfil del usuario con menú desplegable -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-expanded="false" style="color: white;">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg"
+                                alt="Profile" class="profile-pic">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Perfil</a>
+                            <a class="dropdown-item" href="#">Configuración</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Cerrar sesión</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Barra lateral -->
+            <div class="col-md-2 sidebar d-none d-md-block">
+                <a href="/MOC/Mentore.html"><img src="Assets/img/menu_book_24dp_FILL0_wght400_GRAD0_opsz24.png"alt="Friends" width="24" height="24" class="mr-2">mentores</a><br>
+                        <br>
+
+                <a href="MOC/Orientador.html"><img src="Assets/img/explore_24dp_FILL0_wght400_GRAD0_opsz24.png"
+                        alt="Friends" width="24" height="24" class="mr-2">orientadores</a><br><br>
+
+
+
+                <a href="MOC/Consejero.html"><img src="Assets/img/help_24dp_FILL0_wght400_GRAD0_opsz24.png"
+                        alt="Groups" width="24" height="24" class="mr-2">consejero</a><br>
+                        <br>
+                <a href="#"><img src="Assets/img/diversity_3_24dp_FILL0_wght400_GRAD0_opsz24.png"
+                        alt="Groups" width="24" height="24" class="mr-2">mis intereses</a><br>
+                        <br>
+
+
+                <a href="#" id="openPopupBtn"><img src="Assets/img/interests_24dp_FILL0_wght400_GRAD0_opsz24.png"
+                        alt="Events" width="24" height="24" class="mr-2">intereses</a><br><br>
+                <!-- javascript para ventana emergente -->
+                <!-- popup -->
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span id="closePopupBtn" class="close">&times;</span>
+                        <h2>Escuela de Administración, Negocios y Servicios</h2>
+                        <ul>
+                            <li><a href="">Administración de Empresas</a></li>
+                            <li><a href="">Ingeniería en Administración de Empresas</a></li>
+                            <li><a href="">Contador Auditor</a></li>
+                            <li><a href="">Técnico en Administración de Empresas</a></li>
+                            <li><a href="">Técnico en Comercio Exterior</a></li>
+                            <li><a href="">Técnico en Marketing</a></li>
+                            <li><a href="">Técnico en Gestión de Personas</a></li>
+                        </ul>
+
+                        <h2>Escuela de Tecnología</h2>
+                        <ul>
+                            <li><a href="">Ingeniería en Informática</a></li>
+                            <li><a href="">Técnico en Programación y Análisis de Sistemas</a></li>
+                            <li><a href="">Técnico en Redes y Telecomunicaciones</a></li>
+                            <li><a href="">Ingeniería en Ciberseguridad</a></li>
+                            <li><a href="">Técnico en Desarrollo de Videojuegos</a></li>
+                        </ul>
+
+                        <h2>Escuela de Salud</h2>
+                        <ul>
+                            <li><a href="">Técnico en Enfermería</a></li>
+                            <li><a href="">Técnico en Odontología</a></li>
+                            <li><a href="">Técnico en Laboratorio Clínico y Banco de Sangre</a></li>
+                            <li><a href="">Técnico en Imagenología y Radioterapia</a></li>
+                            <li><a href="">Técnico en Podología Clínica</a></li>
+                        </ul>
+
+                        <h2>Escuela de Educación</h2>
+                        <ul>
+                            <li><a href="">Técnico en Educación Parvularia</a></li>
+                            <li><a href="">Técnico en Educación Diferencial</a></li>
+                            <li><a href="">Técnico en Educación de Párvulos y Básica Inicial</a></li>
+                            <li><a href="">Pedagogía en Educación Diferencial</a></li>
+                        </ul>
+
+                        <h2>Escuela de Humanidades</h2>
+                        <ul>
+                            <li><a href="">Trabajo Social</a></li>
+                            <li><a href="">Técnico en Trabajo Social</a></li>
+                            <li><a href="">Técnico en Prevención y Rehabilitación de Adicciones</a></li>
+                            <li><a href="">Psicopedagogía</a></li>
+                        </ul>
+
+                        <h2>Escuela de Comunicaciones, Arte y Diseño</h2>
+                        <ul>
+                            <li><a href="">Publicidad</a></li>
+                            <li><a href="">Diseño Gráfico</a></li>
+                            <li><a href="">Producción de Eventos</a></li>
+                            <li><a href="">Producción de Medios Audiovisuales</a></li>
+                            <li><a href="">Técnico en Diseño de Vestuario</a></li>
+                        </ul>
+
+                        <h2>Escuela de Turismo y Gastronomía</h2>
+                        <ul>
+                            <li><a href="">Técnico en Turismo</a></li>
+                            <li><a href="">Técnico en Gastronomía Internacional</a></li>
+                            <li><a href="">Técnico en Administración Hotelera</a></li>
+                        </ul>
+
+                        <h2>Escuela de Construcción y Obras Civiles</h2>
+                        <ul>
+                            <li><a href="">Ingeniería en Construcción</a></li>
+                            <li><a href="">Técnico en Construcción</a></li>
+                            <li><a href="">Técnico en Edificación</a></li>
+                            <li><a href="">Técnico en Topografía</a></li>
+                        </ul>
+
+                        <h2>Escuela de Recursos Naturales</h2>
+                        <ul>
+                            <li><a href="">Técnico en Gestión Ambiental</a></li>
+                            <li><a href="">Técnico en Acuicultura</a></li>
+                            <li><a href="">Técnico en Energías Renovables</a></li>
+                        </ul>
+
+                        <h2>Escuela de Derecho</h2>
+                        <ul>
+                            <li><a href="">Técnico Jurídico</a></li>
+                            <li><a href="">Técnico en Gestión Pública</a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+                <!-- fin de javascript para ventana emergente -->
+
+            </div>
+
+            <!-- Barra inferior para pantallas pequeñas -->
+            <div class="col-12 d-md-none fixed-bottom bg-white border-top">
+                <div class="row justify-content-around">
+                    <div class="col-3 text-center">
+                        <a href="#"><span class="material-symbols-outlined">home</span></a>
+                    </div>
+                    <div class="col-3 text-center">
+                        <a href="#"><img src="groups-icon.png" alt="Groups" width="24" height="24"></a>
+                    </div>
+                    <div class="col-3 text-center">
+                        <a href="#"><img src="events-icon.png" alt="Events" width="24" height="24"></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contenido principal -->
+            <div class="col-md-7 main-content col-12">
+                <!-- Contenedor del contenido principal con la clase main-content-container -->
+                <div class="main-content-container">
+                    <div class="post">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg"
+                                alt="User" width="40" height="40" class="mr-3">
+                            <div>
+                                <strong>John Doe</strong><br>
+                                <small>@johndoe</small>
+                            </div>
+                        </div>
+                        <p>chicos este es un ejemplo sobre lo que mencione en clases
+                        </p>
+                        <div class="img-placeholder"
+                            style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                            <img src="image-placeholder.png" alt="Image" style="max-width: 100%; max-height: 100%;">
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg"
+                                alt="User" width="40" height="40" class="mr-3">
+                            <div>
+                                <strong>John Doe</strong><br>
+                                <small>@johndoe</small>
+                            </div>
+                        </div>
+                        <p>Excited to share my latest project with you all! Check it out and let me know what you think.
+                        </p>
+                        <div class="img-placeholder"
+                            style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                            <img src="image-placeholder.png" alt="Image" style="max-width: 100%; max-height: 100%;">
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg"
+                                alt="User" width="40" height="40" class="mr-3">
+                            <div>
+                                <strong>John Doe</strong><br>
+                                <small>@johndoe</small>
+                            </div>
+                        </div>
+                        <p>Excited to share my latest project with you all! Check it out and let me know what you think.
+                        </p>
+                        <div class="img-placeholder"
+                            style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                            <img src="image-placeholder.png" alt="Image" style="max-width: 100%; max-height: 100%;">
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg"
+                                alt="User" width="40" height="40" class="mr-3">
+                            <div>
+                                <strong>Publicidad</strong><br>
+                                <small>@Publicidad</small>
+                            </div>
+                        </div>
+                        <p>Excited to share my latest project with you all! Check it out and let me know what you think.
+                        </p>
+                        <div class="img-placeholder"
+                            style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                            <img src="image-placeholder.png" alt="Image" style="max-width: 100%; max-height: 100%;">
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg"
+                                alt="User" width="40" height="40" class="mr-3">
+                            <div>
+                                <strong>John Doe</strong><br>
+                                <small>@johndoe</small>
+                            </div>
+                        </div>
+                        <p>Excited to share my latest project with you all! Check it out and let me know what you think.
+                        </p>
+                        <div class="img-placeholder"
+                            style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                            <img src="image-placeholder.png" alt="Image" style="max-width: 100%; max-height: 100%;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Barra lateral derecha -->
+            <div class="col-md-3 d-none d-md-block">
+                <!-- Sección de sugerencias -->
+                <div class="suggestions mb-4">
+                    <h5>Suggestions</h5>
+                    <div class="suggestion-item">
+                        <div class="d-flex align-items-center">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg"
+                                alt="Jane Doe" width="40" height="40" class="mr-2">
+                            <div>
+                                <strong>Jane Doe</strong><br>
+                                <small>@janedoe</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm">+</button>
+                    </div>
+                    <br>
+                    <div class="suggestion-item">
+                        <div class="d-flex align-items-center">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg"
+                                alt="John Smith" width="40" height="40" class="mr-2">
+                            <div>
+                                <strong>John Smith</strong><br>
+                                <small>@johnsmith</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm">+</button>
+                    </div>
+                </div>
+
+                <!-- Sección de publicidad -->
+                <div class="advertising mb-4">
+                    <h5>Advertising</h5>
+                    <div class="img-placeholder"
+                        style="height: 100px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                        <img src="ad-placeholder.png" alt="Ad" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                    <small>Sponsored</small>
+                </div>
+
+                <!-- Sección de tendencias -->
+                <div class="trending">
+                    <h5>Trending</h5>
+                    <div class="trending-item">
+                        <div>#NewFeature</div>
+                    </div>
+                    <div class="trending-item">
+                        <div>#SocialMedia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+                </ul>
+                <p class="text-center text-body-secondary">© 2024 MAYCI</p>
+            </footer>
+        </div>
+    </div>
+
+
+    <!--franco -->
+    <script src="script.js"></script>
+    <!-- franco -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
