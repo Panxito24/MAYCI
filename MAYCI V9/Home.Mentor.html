@@ -1,0 +1,242 @@
+<!--
+Este archivo HTML representa la página de inicio para la aplicación "MAYCI", específicamente para el rol de "Mentor".
+Incluye una barra de navegación, una barra lateral y una sección de contenido principal.
+La barra de navegación contiene un campo de entrada de búsqueda, un logotipo y elementos de menú.
+La barra lateral muestra información del usuario, un botón de calendario y varios enlaces.
+La sección de contenido principal permite a los usuarios crear y ver publicaciones.
+Las publicaciones incluyen información del usuario, un mensaje y un marcador de posición de imagen.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME MENTOR</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/Assets/Home.Mentores.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="Assets/script/javascriptdeestudiante.js" defer></script>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-custom navbar-expand-lg bg-body-tertiary" style="background-color: gray; color: white;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: white;">MAYCI</a>
+            <div class="d-flex justify-content-center flex-grow-1">
+                <div class="position-relative">
+                    <input type="text" class="form-control search-input" placeholder="Search...">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search position-absolute" viewBox="0 0 16 16" style="left: 10px; top: 50%; transform: translateY(-50%);"></svg>
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.397h-.001l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85zm-5.442 1.48a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11z" />
+                    </svg>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: white;">Features</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="Profile" class="profile-pic" style="color: white;">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" style="color: white;">
+                            <a class="dropdown-item" href="#">Perfil</a>
+                            <a class="dropdown-item" href="#">Configuración</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Cerrar sesión</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Barra lateral Izquierda-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 sidebar d-none d-md-block">
+                <div class="card" style="width: 12rem;">
+                    <img src="https://www.lacuarta.com/resizer/fWqKz37sqZI2_lmGN7mwlNpENC4=/1023x682/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/BLU2EF2HXVB53CCNEYFODB7EGU.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">nombre de usuario</h5>
+                        <p class="card-text">biografia del usuario</p>
+                        <p class="card-text">especialidad</p>
+                        <p class="card-text">donde estudio</p>
+                        <p class="card-text"></p>
+                        <p class="card-text"></p>
+                        <p class="card-text"></p>
+                        <a href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fu%2F0%2Fr&emr=1&followup=https%3A%2F%2Fcalendar.google.com%2Fcalendar%2Fu%2F0%2Fr&ifkv=AS5LTATyfgPV8gL6Y7qImLSlgDp8MEizoMD__YlVqd2BNgCuSDe5k21YoTisL8VCRZqPksWK_vmhPg&osid=1&passive=1209600&service=cl&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-517761006%3A1717616157638318&ddm=0" class="btn btn-primary">calendario</a>
+                    </div>
+                </div>
+                <br><br>
+                <!--Opciones de contenido-->
+                <a href="/MOC/Mentore.html"><img src="Assets/img/menu_book_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Friends" width="24" height="24" class="mr-2">mentores</a><br>
+                <a href="MOC/Orientador.html"><img src="Assets/img/explore_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Friends" width="24" height="24" class="mr-2">orientadores</a><br>
+                <a href="MOC/Consejero.html"><img src="Assets/img/help_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Groups" width="24" height="24" class="mr-2">consejero</a><br>
+                <a href="#"><img src="Assets/img/diversity_3_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Groups" width="24" height="24" class="mr-2">mis intereses</a><br>
+                <a href="#" id="openPopupBtn"><img src="Assets/img/interests_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Events" width="24" height="24" class="mr-2">intereses</a><br>
+                <!--Popup-->
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <span id="closePopupBtn" class="close">&times;</span>
+                        <h2>Escuela de Administración, Negocios y Servicios</h2>
+                        <ul>
+                            <li><a href="">Administración de Empresas</a></li>
+                            <li><a href="">Ingeniería en Administración de Empresas</a></li>
+                            <li><a href="">Contador Auditor</a></li>
+                            <li><a href="">Técnico en Administración de Empresas</a></li>
+                            <li><a href="">Técnico en Comercio Exterior</a></li>
+                            <li><a href="">Técnico en Marketing</a></li>
+                            <li><a href="">Técnico en Gestión de Personas</a></li>
+                        </ul>
+                        <!-- Resto del contenido del popup -->
+                    </div>
+                </div>
+            </div>
+            <!--Contenido Principal Centro ""-->
+            <div class="col-md-7 main-content col-12">
+                <div class="col-md-15 main-content col-12">
+                    <div class="container">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" style="color: gray;">escribe aqui tu publicacion</textarea>
+                        <br>
+                        <button type="button" class="btn btn-primary" style="font-size: x-small;">public</button>
+                        <button type="button" class="btn btn-primary" style="font-size: x-small;">img</button>
+                        <button type="button" class="btn btn-primary" style="font-size: x-small;">enlace</button>
+                    </div>
+                </div>
+                <div class="main-content-container">
+                    <div class="post">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="User" width="40" height="40" class="mr-3">
+                            <div>
+                                <strong>John Doe</strong><br>
+                                <small>@johndoe</small>
+                            </div>
+                        </div>
+                        <p>Excited to share my latest project with you all! Check it out and let me know what you think.</p>
+                        <div class="img-placeholder" style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                            <img src="image-placeholder.png" alt="Image" style="max-width: 100%; max-height: 100%;">
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="User" width="40" height="40" class="mr-3">
+                            <div>
+                                <strong>John Doe</strong><br>
+                                <small>@johndoe</small>
+                            </div>
+                        </div>
+                        <p>Excited to share my latest project with you all! Check it out and let me know what you think.</p>
+                        <div class="img-placeholder" style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                            <img src="image-placeholder.png" alt="Image" style="max-width: 100%; max-height: 100%;">
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="User" width="40" height="40" class="mr-3">
+                            <div>
+                                <strong>John Doe</strong><br>
+                                <small>@johndoe</small>
+                            </div>
+                        </div>
+                        <p>Excited to share my latest project with you all! Check it out and let me know what you think.</p>
+                        <div class="img-placeholder" style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                            <img src="image-placeholder.png" alt="Image" style="max-width: 100%; max-height: 100%;">
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="User" width="40" height="40" class="mr-3">
+                            <div>
+                                <strong>John Doe</strong><br>
+                                <small>@johndoe</small>
+                            </div>
+                        </div>
+                        <p>Excited to share my latest project with you all! Check it out and let me know what you think.</p>
+                        <div class="img-placeholder" style="height: 200px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                            <img src="image-placeholder.png" alt="Image" style="max-width: 100%; max-height: 100%;">
+                        </div>
+                    </div>
+                    <!-- Resto de los posts -->
+                </div>
+            </div>
+            <div class="col-md-3 d-none d-md-block">
+                <div class="suggestions mb-4">
+                    <h5>Suggestions</h5>
+                    <div class="suggestion-item">
+                        <div class="d-flex align-items-center">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="Jane Doe" width="40" height="40" class="mr-2">
+                            <div>
+                                <strong>Jane Doe</strong><br>
+                                <small>@janedoe</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm">+</button>
+                    </div>
+                    <div class="suggestion-item">
+                        <div class="d-flex align-items-center">
+                            <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg"
+                                alt="John Smith" width="40" height="40" class="mr-2">
+                            <div>
+                                <strong>John Smith</strong><br>
+                                <small>@johnsmith</small>
+                            </div>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm">+</button>
+                    </div>
+                </div>
+
+                <!-- Sección de publicidad -->
+                <div class="advertising mb-4">
+                    <h5>Advertising</h5>
+                    <div class="img-placeholder"
+                        style="height: 100px; background-color: #e9ecef; display: flex; align-items: center; justify-content: center;">
+                        <img src="ad-placeholder.png" alt="Ad" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                    <small>Sponsored</small>
+                </div>
+
+                <!-- Sección de tendencias -->
+                <div class="trending">
+                    <h5>Trending</h5>
+                    <div class="trending-item">
+                        <div>#NewFeature</div>
+                    </div>
+                    <div class="trending-item">
+                        <div>#SocialMedia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="container">
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
+                </ul>
+                <p class="text-center text-body-secondary">© 2024 MAYCI</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</html>

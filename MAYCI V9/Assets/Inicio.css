@@ -1,0 +1,18 @@
+/* Estilos específicos para el ícono */
+.h-12 {
+    height: 3rem;
+}
+
+.w-12 {
+    width: 3rem;
+}
+
+.text-secondary {
+    color: #6c757d;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

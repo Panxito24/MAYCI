@@ -1,0 +1,155 @@
+<!--
+    Este archivo HTML representa la página de inicio de un proyecto llamado MAYCI.
+    Contiene la estructura básica de una página web, incluyendo la declaración DOCTYPE, el encabezado, el cuerpo y el pie de página.
+    También incluye estilos CSS y scripts JavaScript externos, así como contenido de navegación y secciones de la página.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>INICIO</title>
+
+    <!-- Se enlaza el archivo CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Se enlaza el archivo CSS personalizado -->
+    <link rel="stylesheet" href="/Assets/Inicio.css">
+
+    <!-- Se carga el script JavaScript de inicio de forma diferida -->
+    <script src="Assets/script/javainicio.js" defer></script>
+</head>
+
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg py-3 navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">MAYCI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Agrega aquí más elementos de navegación si es necesario -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mas</a>
+                    </li>
+                </ul>
+                <a href="/login.html"></a>
+                <button class="btn btn-primary ms-lg-3">Iniciar Sesion</button>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección del héroe -->
+    <section class="py-5 py-md-5 py-lg-5 bg-gradient">
+        <div class="container text-center">
+            <div class="mx-auto">
+                <h1 class="display-4 fw-bold">
+                    MAYCI
+                </h1>
+                <p class="lead">
+                    Ayudas en mentorias a la instrucción de tu carrera
+                </p>
+
+                <br><br>
+
+                <h1 class="display-6 fw-bold">
+                    registrate como:
+                </h1>
+                <div lex-md-row justify-content-center gap-3">
+                    <a class="btn btn-primary btn-lg" href="/register.html" role="button">
+                        como mentor
+                    </a>
+                    <a class="btn btn-secondary btn-lg" href="/register.html" role="button">
+                        como estudiante
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del héroe -->
+    <section class="py-5 py-md-5 py-lg-5 bg-light">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-lg-3 gap-4">
+                <!-- Sección del héroe -->
+                <div class="col card-group">
+                    <div class="text-center">
+                        <svg class="h-12 w-12 text-secondary" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8--2v10z">
+                            </path>
+                        </svg>
+                        <h3 class="mt-3 mb-2 fs-5 fw-bold">MENTOR</h3>
+                        <p class="text-secondary">es un guía experimentado que aconseja y apoya el desarrollo personal y
+                            profesional.</p>
+                    </div>
+                </div>
+                <!-- Característica 2: CONSEJERO -->
+                <div class="col">
+                    <div class="text-center">
+                        <svg class="h-12 w-12 text-secondary" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M3 12h6v-2h-6v2zm14 1h-6v2h6v-2zm-10-5h10v-2h-10v2zm-2 9h12v-2h-12v2z"></path>
+                        </svg>
+                        <h3 class="mt-3 mb-2 fs-5 fw-bold">CONSEJERO</h3>
+                        <p class="text-secondary">es un profesional que ofrece orientación y apoyo emocional en diversas
+                            situaciones estudiantiles.</p>
+                    </div>
+                </div>
+                 <!-- Característica 3: Orientador -->
+                <div class="col">
+                    <div class="text-center">
+                        <svg class="h-12 w-12 text-secondary" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 18c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8zm1-9h2v6h-2v-6zm-4 6h2v-10h-2v10z">
+                            </path>
+                        </svg>
+                        <h3 class="mt-3 mb-2 fs-5 fw-bold">ORIENTADOR</h3>
+                        <p class="text-secondary"> es alguien que guía y asesora en la toma de decisiones académicas o
+                            profesionales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <a class="d-flex align-items-center text-light" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="h-8 w-8 text-white me-2"> <path d="m8 3 4 8 5-5 5 15H2L8 3z"></path>
+                        </svg>
+                        <span class="font-weight-bold fs-5">MAYCI</span>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <nav class="nav justify-content-center justify-content-md-end">
+                        <a class="nav-link text-light" href="#">Home</a>
+                        <a class="nav-link text-light" href="#">About</a>
+                        <a class="nav-link text-light" href="#">Services</a>
+                        <a class="nav-link text-light" href="#">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
